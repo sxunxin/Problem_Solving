@@ -6,7 +6,7 @@ class Solution {
         for (int i = 0; i < code.length(); i++) {
             
             if (code.charAt(i) == '1') {
-                mode = (mode == 0) ? 1 : 0;
+                mode ^= 1;
             } else if (i % 2 == mode) {
                 sb.append(code.charAt(i));
             }
